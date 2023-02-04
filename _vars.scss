@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+$background: #ffffff;
+$accent: #f1a536;
+$text: #000000;
+$recipe-red: #a63223;
+$transparent: rgba(1, 1, 1, 0);
+
+* { /* RESET */
+    vertical-align: baseline;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    color: $text;
+}
+
+head, script {
+    display: none;
+}
