@@ -4,31 +4,224 @@ body {
     background-color: $background;
 }
 
-header {
+header, footer {
     background-color: $accent;
-    padding: 50px 100px;
+    padding: 20px 150px;
     display: flex;
     justify-content: right;
     align-items: center;
     border-bottom: 3px solid $background;
 
-    .logo-container {
+    img {
         margin-right: auto;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-         img {
+    }
 
-         }
-         p {
-
-         }
+    a, p {
+        font-size: 1.5em;
+        margin-left: 30px;
     }
 }
 
 main {
     .landing-background {
-        background-image: url(images/hero-image.jpg);
+        background-image: url(../images/hero-image.jpg);
+        background-color: $background;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 70vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            padding: 10px 30px;
+            margin-bottom: 80px;
+            background-color: $background;
+            display: inline-block;
+        }
+    }
+
+    // BENGAL BURGER
+    .landing-background.burger {
+        background-image: url(../images/bengal-burger.jpg);
+    }
+
+    .recipe-blurb {
+        padding: $body-padding;
+
+        .blurb-text {
+            margin-bottom: 50px;
+
+            h2 {
+                font-size: 2.5em;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .recipe-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .recipe {
+                width: 500px;
+                margin-bottom: 30px;
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+
+                a {
+                    display: block;
+                    text-align: center;
+                    font-size: 1.5em;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    .secondary {
+        background-color: $background-gray;
+
+        .recipe-list{
+            .recipe {
+                width: 350px;
+                background-color: $background;
+                img {
+                     height: 300px;
+                }
+            }
+        }
+    }
+
+    .tertiary {
+        .recipe-list{
+            .recipe {
+                img {
+                    padding: 10px;
+                    background-color: $background-gray;
+                }
+            }
+        }
+    }
+
+    // BENGAL BURGER
+    table {
+        background-color: $background-gray;
+        padding: $body-padding;
+        width: 100%;
+
+        thead {
+            tr {
+                th {
+                    font-size: 2em;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        tbody{
+            tr {
+                td {
+                    .label {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .recipe-title {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        padding: $body-padding;
+        margin-bottom: 50px;
+
+        h2 {
+            display: block;
+            font-size: 2.5em;
+            font-weight: 800;
+        }
+
+        .reviews {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .stars {
+                margin-right: 20px;
+            }
+        }
+
+        .recipe-controls {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+
+            a {
+                padding: 10px 30px;
+                background-color: $recipe-red;
+                border-radius: 50px;
+                margin-right: 20px;
+                color: $background;
+            }
+
+            .printer-container {
+                height: 45px;
+                width: 45px;
+                border: 1.5px solid $text;
+                border-radius: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .recipe-description {
+            padding: $body-padding;
+            background-color: $background-recipe;
+            text-align: center;
+            color: $text-gray;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+    }
+}
+
+footer {
+    height: 150px;
+    border: 0;
+
+    p {
+        margin-right: auto;
+    }
+
+    p, a {
+        font-size: 1em;
     }
 }
