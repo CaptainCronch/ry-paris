@@ -155,7 +155,6 @@ main {
         justify-content: start;
         align-items: center;
         padding: $body-padding;
-        margin-bottom: 50px;
 
         h2 {
             display: block;
@@ -209,6 +208,49 @@ main {
             color: $text-gray;
             font-size: 1.5em;
             font-weight: 700;
+        }
+    }
+
+    .recipe {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: $body-padding;
+
+        h2.title {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        h3.title {
+            font-size: 1em;
+            font-weight: 700;
+            margin: 20px 0 0 20px;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        .instructions {
+            width: 50%;
+        }
+
+        .directions {
+            width: 50%;
+            li {
+                padding-bottom: 20px;
+            }
+
+            .countertop-grill {
+                margin-top: 20px;
+                font-weight: 500;
+            }
         }
     }
 }
