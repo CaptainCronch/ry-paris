@@ -183,41 +183,48 @@ main .recipe-title .recipe-description {
   font-size: 1.5em;
   font-weight: 700;
 }
-main .recipe {
+main .burger-recipe {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 150px;
 }
-main .recipe h2.title {
+main .burger-recipe h2.title {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 20px;
 }
-main .recipe h3.title {
+main .burger-recipe h3.title {
   font-size: 1em;
   font-weight: 700;
   margin: 20px 0 0 20px;
 }
-main .recipe ul {
+main .burger-recipe ul {
   list-style-position: inside;
 }
-main .recipe ol {
+main .burger-recipe ol {
   padding-left: 20px;
 }
-main .recipe .instructions {
+main .burger-recipe .instructions {
   width: 50%;
 }
-main .recipe .directions {
+main .burger-recipe .directions {
   width: 50%;
 }
-main .recipe .directions li {
+main .burger-recipe .directions li {
   padding-bottom: 20px;
 }
-main .recipe .directions .countertop-grill {
+main .burger-recipe .directions .countertop-grill {
   margin-top: 20px;
   font-weight: 500;
+}
+main .youtube {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 footer {
